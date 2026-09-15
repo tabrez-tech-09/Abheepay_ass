@@ -1,5 +1,12 @@
 package Abheepay.demo.Repository;
 
-public class userRepository {
+import java.util.Optional;
+
+import Abheepay.demo.dto.user;
+
+public interface userRepository {
+    Optional<user> findById(String id);
+    void save(user user);
     
+
 }
